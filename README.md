@@ -10,17 +10,17 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 # In this project:.
 
 
-**Preprocessed:** The dataset to handle imbalanced classes, missing values, and irrelevant features.
+**1. Preprocessed:** The dataset to handle imbalanced classes, missing values, and irrelevant features.
 
-**Explored:** The data through visualization and statistical analysis to gain insights and identify patterns.
+**2. Explored:** The data through visualization and statistical analysis to gain insights and identify patterns.
 
-**Trained:** Multiple machine learning models, including Logistic Regression, Decision Trees, and Random Forests, to classify transactions as fraudulent or legitimate.
+**3. Trained:** Multiple machine learning models, including Logistic Regression, Decision Trees, and Random Forests, to classify transactions as fraudulent or legitimate.
 
-**Evaluated:** The performance of these models using metrics such as accuracy, precision, recall, F1-score, and AUC-ROC curve.        
+**4. Evaluated:** The performance of these models using metrics such as accuracy, precision, recall, F1-score, and AUC-ROC curve.        
 
-**Optimized:** The models through hyperparameter tuning to improve their predictive power.
+**5. Optimized:** The models through hyperparameter tuning to improve their predictive power.
 
-**Implemented:** The final model in a user-friendly interface for easy integration into real-world applications.
+**6. Implemented:** The final model in a user-friendly interface for easy integration into real-world applications.
 
 
 
@@ -28,13 +28,13 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 
 
 
-**Comprehensive Data Preprocessing:** Handling of class imbalance using techniques such as SMOTE or undersampling.
+**1. Comprehensive Data Preprocessing:** Handling of class imbalance using techniques such as SMOTE or undersampling.
 
-**Model Comparison:** Analysis of different algorithms to determine the most effective model for fraud detection.
+**2. Model Comparison:** Analysis of different algorithms to determine the most effective model for fraud detection.
 
-**Performance Evaluation:** Detailed metrics and visualizations to assess the accuracy and reliability of the models.
+**3. Performance Evaluation:** Detailed metrics and visualizations to assess the accuracy and reliability of the models.
 
-**Hyperparameter Tuning:** Fine-tuning models to achieve optimal performance.
+**4. Hyperparameter Tuning:** Fine-tuning models to achieve optimal performance.
 
 
 
