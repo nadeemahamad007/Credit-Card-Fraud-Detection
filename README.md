@@ -6,7 +6,9 @@ This project aims to build a robust model to detect fraudulent credit card trans
 
 Credit card fraud is a significant concern in the financial sector, with potentially severe consequences for both consumers and financial institutions. Detecting fraudulent transactions effectively is crucial for preventing losses and ensuring customer trust.
 
+
 **In this project:.**
+
 
 **Preprocessed:** The dataset to handle imbalanced classes, missing values, and irrelevant features.
 
@@ -20,7 +22,11 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 
 **Implemented:** The final model in a user-friendly interface for easy integration into real-world applications.
 
+
+
 **Key Features:.**
+
+
 
 **Comprehensive Data Preprocessing:** Handling of class imbalance using techniques such as SMOTE or undersampling.
 
@@ -31,7 +37,10 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 **Hyperparameter Tuning:** Fine-tuning models to achieve optimal performance.
 
 
+
 **Technologies Used:.**
+
+
 
 **1. Python**
 
@@ -44,6 +53,8 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 **5. SMOTE (Synthetic Minority Over-sampling Technique)**
 
 **6. Jupyter Notebook**
+
+
 
 
 **Conclusion:.**
