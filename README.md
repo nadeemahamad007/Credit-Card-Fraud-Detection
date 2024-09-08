@@ -1,13 +1,13 @@
-**Credit Card Fraud Detection**
+# Credit Card Fraud Detection
 
 This project aims to build a robust model to detect fraudulent credit card transactions using a dataset containing detailed information about such transactions. The primary objective is to accurately classify transactions as either fraudulent or legitimate. To achieve this, the project explores and experiments with various machine learning algorithms, including Logistic Regression, Decision Trees, and Random Forests.
 
-**Project Overview:.**
+# Project Overview:.
 
 Credit card fraud is a significant concern in the financial sector, with potentially severe consequences for both consumers and financial institutions. Detecting fraudulent transactions effectively is crucial for preventing losses and ensuring customer trust.
 
 
-**In this project:.**
+# In this project:.
 
 
 **Preprocessed:** The dataset to handle imbalanced classes, missing values, and irrelevant features.
@@ -24,7 +24,7 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 
 
 
-**Key Features:.**
+# Key Features:.
 
 
 
@@ -38,7 +38,7 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 
 
 
-**Technologies Used:.**
+# Technologies Used:.
 
 
 
@@ -57,5 +57,5 @@ Credit card fraud is a significant concern in the financial sector, with potenti
 
 
 
-**Conclusion:.**
+# Conclusion:.
 This project provides a thorough exploration of machine learning techniques for fraud detection in credit card transactions. The final model demonstrates a strong ability to distinguish between legitimate and fraudulent transactions, making it a valuable tool for financial institutions.
