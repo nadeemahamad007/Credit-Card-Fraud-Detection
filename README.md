@@ -1,61 +1,136 @@
 # Credit Card Fraud Detection
 
-This project aims to build a robust model to detect fraudulent credit card transactions using a dataset containing detailed information about such transactions. The primary objective is to accurately classify transactions as either fraudulent or legitimate. To achieve this, the project explores and experiments with various machine learning algorithms, including Logistic Regression, Decision Trees, and Random Forests.
+An end-to-end machine learning project that identifies fraudulent credit card transactions from highly imbalanced transactional data. This repository now includes both the original notebook and a clean Python training pipeline so the project is easier to understand, reproduce, and showcase in a portfolio.
 
-# Project Overview:.
+## Why this project matters
 
-Credit card fraud is a significant concern in the financial sector, with potentially severe consequences for both consumers and financial institutions. Detecting fraudulent transactions effectively is crucial for preventing losses and ensuring customer trust.
+Credit card fraud detection is a real-world classification problem where the positive class is rare but very costly. That makes model selection and evaluation more important than raw accuracy alone. In this project, the focus is on building a practical fraud detection workflow and comparing multiple models on fraud-specific metrics.
 
+## Project highlights
 
-# In this project:.
+- Cleaned the original notebook workflow into a reusable training script.
+- Compared Logistic Regression, Decision Tree, and Random Forest models.
+- Used preprocessing pipelines with imputation, scaling, and one-hot encoding.
+- Handled class imbalance with class-weighted models.
+- Saved evaluation artifacts such as confusion matrices, metrics, and the best model.
 
+## Dataset
 
-**1. Preprocessed:** The dataset to handle imbalanced classes, missing values, and irrelevant features.
+Source: [Fraud Detection Dataset on Kaggle](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
-**2. Explored:** The data through visualization and statistical analysis to gain insights and identify patterns.
+Files used:
 
-**3. Trained:** Multiple machine learning models, including Logistic Regression, Decision Trees, and Random Forests, to classify transactions as fraudulent or legitimate.
+- `fraudTrain.csv`
+- `fraudTest.csv`
 
-**4. Evaluated:** The performance of these models using metrics such as accuracy, precision, recall, F1-score, and AUC-ROC curve.        
+The raw dataset is not stored in this repository because of file size. Setup steps are available in [data/README.md](data/README.md).
 
-**5. Optimized:** The models through hyperparameter tuning to improve their predictive power.
+## Tech stack
 
-**6. Implemented:** The final model in a user-friendly interface for easy integration into real-world applications.
+- Python
+- Pandas and NumPy
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
 
+## Project structure
 
+```text
+.
+|-- CREDIT CARD FRAUD  DETECTION.ipynb
+|-- train_model.py
+|-- requirements.txt
+|-- data/
+|   `-- README.md
+`-- artifacts/   # generated after training
+```
 
-# Key Features:.
+## Features used
 
+After removing personally identifiable or low-value columns, the project trains on a mix of transaction and customer context features such as:
 
+- `amt`
+- `merchant`
+- `category`
+- `gender`
+- `state`
+- `zip`
+- `lat`, `long`
+- `city_pop`
+- `unix_time`
+- `merch_lat`, `merch_long`
 
-**1. Comprehensive Data Preprocessing:** Handling of class imbalance using techniques such as SMOTE or undersampling.
+## Model pipeline
 
-**2. Model Comparison:** Analysis of different algorithms to determine the most effective model for fraud detection.
+1. Load `fraudTrain.csv` as the training set and `fraudTest.csv` as the holdout test set.
+2. Drop identifier and privacy-sensitive fields.
+3. Impute missing values if present.
+4. Scale numeric features and one-hot encode categorical features.
+5. Train and compare three baseline models.
+6. Evaluate using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices.
+7. Save the best model and result artifacts.
 
-**3. Performance Evaluation:** Detailed metrics and visualizations to assess the accuracy and reliability of the models.
+## Sample results
 
-**4. Hyperparameter Tuning:** Fine-tuning models to achieve optimal performance.
+These results were produced from the current cleaned workflow on the provided train/test split:
 
+| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Random Forest | 0.9782 | 0.1210 | 0.7403 | 0.2080 | 0.9325 |
+| Decision Tree | 0.9557 | 0.0760 | 0.9389 | 0.1407 | 0.9686 |
+| Logistic Regression | 0.9245 | 0.0366 | 0.7338 | 0.0698 | 0.8911 |
 
+Note: Because fraud detection is extremely imbalanced, accuracy alone is misleading. Recall, precision, F1-score, and ROC-AUC are more useful for comparing model quality.
 
-# Technologies Used:.
+## How to run
 
+1. Clone the repository.
+2. Install dependencies:
 
+```bash
+pip install -r requirements.txt
+```
 
-**1. Python**
+3. Download the Kaggle dataset and place the CSV files in the `data/` folder.
+4. Run the training script:
 
-**2. Pandas, NumPy**
+```bash
+python train_model.py
+```
 
-**3. Scikit-learn**
+Optional:
 
-**4. Matplotlib, Seaborn**
+```bash
+python train_model.py --train-path "data/fraudTrain.csv" --test-path "data/fraudTest.csv" --output-dir "artifacts"
+```
 
-**5. SMOTE (Synthetic Minority Over-sampling Technique)**
+## Outputs
 
-**6. Jupyter Notebook**
+After running the script, the `artifacts/` folder will contain:
 
+- `model_metrics.csv`
+- `metrics_summary.json`
+- `best_fraud_model.joblib`
+- confusion matrix plots
+- top feature importance files for the best tree-based model
 
+## What improved in this version
 
+- Removed machine-specific dataset paths from the workflow.
+- Replaced repeated notebook-only experimentation with a reusable script.
+- Made the evaluation process easier for recruiters and reviewers to follow.
+- Added reproducible output artifacts instead of only notebook cells.
 
-# Conclusion:.
-This project provides a thorough exploration of machine learning techniques for fraud detection in credit card transactions. The final model demonstrates a strong ability to distinguish between legitimate and fraudulent transactions, making it a valuable tool for financial institutions.
+## Future improvements
+
+- Add cross-validation and threshold tuning for better fraud recall/precision trade-offs.
+- Try gradient boosting models such as XGBoost or LightGBM.
+- Package the best model behind a Streamlit or Flask demo app.
+
+## Portfolio note
+
+This repository represents Project 1 from my CodSoft internship machine learning work. The notebook is still included for exploration, while the script-based pipeline makes the project easier to review and extend.
+
+## Connect
+
+If you would like to connect or follow my project updates, feel free to add this project to my LinkedIn portfolio alongside the other internship projects.
