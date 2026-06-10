@@ -135,10 +135,6 @@ After running the script, the `artifacts/` folder will contain:
 - Try gradient boosting models such as XGBoost or LightGBM.
 - Package the best model behind a Streamlit or Flask demo app.
 
-## Internship note
-
-This repository represents Project 1 from my CodSoft Machine Learning virtual internship. The internship duration was from `01/08/2024` to `31/08/2024`, and this project reflects my practical work in fraud detection, classification, and model evaluation during that learning experience.
-
 ## Author
 
 Nadeem Ahamad
