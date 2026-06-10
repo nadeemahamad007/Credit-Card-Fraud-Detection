@@ -140,10 +140,12 @@ After running the script, the `artifacts/` folder will contain:
 - Try gradient boosting models such as XGBoost or LightGBM.
 - Package the best model behind a Streamlit or Flask demo app.
 
-## Portfolio note
+## Internship note
 
-This repository represents Project 1 from my CodSoft internship machine learning work. The notebook is still included for exploration, while the script-based pipeline makes the project easier to review and extend.
+This repository represents Project 1 from my CodSoft Machine Learning virtual internship. The internship duration was from `01/08/2024` to `31/08/2024`, and this project reflects my practical work in fraud detection, classification, and model evaluation during that learning experience.
 
-## Connect
+## Author
 
-If you would like to connect or follow my project updates, feel free to add this project to my LinkedIn portfolio alongside the other internship projects.
+Nadeem Ahamad
+
+Machine Learning project focused on Credit Card Fraud Detection, transaction risk classification, fraud pattern analysis, and model evaluation using Python by CodSoft Internship Project.
