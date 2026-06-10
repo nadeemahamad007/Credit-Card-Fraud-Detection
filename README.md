@@ -1,5 +1,18 @@
 # Credit Card Fraud Detection
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML%20Models-F7931E?style=for-the-badge&logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+## Author
+
+Nadeem Ahamad
+
+Machine Learning project focused on Credit Card Fraud Detection, transaction risk classification, fraud pattern analysis, and model evaluation using Python.
+
 An end-to-end machine learning project that identifies fraudulent credit card transactions from highly imbalanced transactional data. This repository now includes both the original notebook and a clean Python training pipeline so the project is easier to understand, reproduce, and showcase in a portfolio.
 
 ## Why this project matters
