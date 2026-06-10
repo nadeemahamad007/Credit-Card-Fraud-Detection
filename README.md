@@ -7,12 +7,7 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## Author
-
-Nadeem Ahamad
-
 Machine Learning project focused on Credit Card Fraud Detection, transaction risk classification, fraud pattern analysis, and model evaluation using Python.
-
 An end-to-end machine learning project that identifies fraudulent credit card transactions from highly imbalanced transactional data. This repository now includes both the original notebook and a clean Python training pipeline so the project is easier to understand, reproduce, and showcase in a portfolio.
 
 ## Why this project matters
